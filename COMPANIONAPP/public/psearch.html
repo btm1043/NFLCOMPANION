@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Player Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+.containermenu {
+    position: -webkit-sticky;
+    background:#1AAB8A;
+    width:45%;
+    float:left;
+}
+.containerINFO{
+    position: -webkit-sticky;
+    background:whitesmoke;
+    width:45%;
+    float:right;
+    height:100%;
+}
+.buttonm{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  width:100%;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.buttonlogin{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:5px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.buttonm:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.buttonm:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.buttonm:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.buttonm:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+body { 
+    font-size: 80%; 
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; 
+}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.selectp
+{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+</style>
+</head>
+        <body onload="init()">
+        <button onclick="location.href='./index.html'"  class="buttonm"><span>HOMEPAGE </span></button><br>
+        <br>
+        <br>
+        <div class="containermenu">
+            <div>PLayer1</div>
+            <label for="p1"><b>Player  </b></label>
+            <input type="text" placeholder="Enter Player Name" name="p1" id="p1" required>
+            <select class="selectp">
+  <option value="QB">QB</option>
+  <option value="RB">RB</option>
+  <option value="FB">FB</option>
+  <option value="WR">WR</option>
+  <option value="TE">TE</option>
+  <option value="OL">OL</option>
+  <option value="C">C</option>
+  <option value="G">G</option>
+  <option value="LG">LG</option>
+  <option value="RG">RG</option>
+  <option value="T">T</option>
+  <option value="LT">LT</option>
+  <option value="RT">RT</option>
+  <option value="K">K</option>
+  <option value="KR">KR</option>
+  <option value="DL">DL</option>
+  <option value="DE">DE</option>
+  <option value="DT">DT</option>
+  <option value="NT">NT</option>
+  <option value="LB">LB</option>
+  <option value="ILB">ILB</option>
+  <option value="OLB">OLB</option>
+  <option value="MLB">MLB</option>
+  <option value="DB">DB</option>
+  <option value="CB">CB</option>
+  <option value="FS">FS</option>
+  <option value="SS">SS</option>
+  <option value="S">S</option>
+  <option value="P">P</option>
+  <option value="PR">PR</option>
+            </select>
+    <button class="buttonlogin" id="submit1" onclick="validate()">SEARCH</button>
+        </div>
+        <div class="containerINFO">
+            <div>PLayer2</div>
+            <label for="p1"><b>Player  </b></label>
+            <input type="text" placeholder="Enter Player Name" name="p1" id="p1" required>
+            <select class="selectp">
+  <option value="QB">QB</option>
+  <option value="RB">RB</option>
+  <option value="FB">FB</option>
+  <option value="WR">WR</option>
+  <option value="TE">TE</option>
+  <option value="OL">OL</option>
+  <option value="C">C</option>
+  <option value="G">G</option>
+  <option value="LG">LG</option>
+  <option value="RG">RG</option>
+  <option value="T">T</option>
+  <option value="LT">LT</option>
+  <option value="RT">RT</option>
+  <option value="K">K</option>
+  <option value="KR">KR</option>
+  <option value="DL">DL</option>
+  <option value="DE">DE</option>
+  <option value="DT">DT</option>
+  <option value="NT">NT</option>
+  <option value="LB">LB</option>
+  <option value="ILB">ILB</option>
+  <option value="OLB">OLB</option>
+  <option value="MLB">MLB</option>
+  <option value="DB">DB</option>
+  <option value="CB">CB</option>
+  <option value="FS">FS</option>
+  <option value="SS">SS</option>
+  <option value="S">S</option>
+  <option value="P">P</option>
+  <option value="PR">PR</option>
+            </select>
+    <button class="buttonlogin" id="submit2" onclick="validate()">SEARCH</button>
+        </div>
+    <div class="containermenu">
+        <div>PLayer1 STATs</div>
+    </div>
+        <div class="containerINFO">
+            <div>PLayer2 STATs</div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>NFL Companion App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../home.css">
+    <style>
+.containermenu {
+    position: -webkit-sticky;
+    background:#1AAB8A;
+    width:25%;
+    float:left;
+}
+.containerINFO{
+    position: -webkit-sticky;
+    background:whitesmoke;
+    width:75%;
+    float:right;
+    height:100%;
+}
+.buttonm{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  width:100%;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.buttonlogin{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  height:60px;
+  font-size:1.6em;
+  padding:5px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.buttonm:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.buttonm:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.buttonm:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.buttonm:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+body { 
+    font-size: 80%; 
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; 
+}
+
+.iframe{
+    width:75%;
+    float: right;
+}
+</style>
+    </head>
+    <body onload="init()">
+        <button onclick="location.href='./login.html'"  class="buttonlogin"><span>LOGIN </span></button><br>
+        <br>
+        <br>
+        <div class="containermenu">
+         <button onclick="location.href='./psearch.html'" class="buttonm"><span>PLAYER SEARCH </span></button>
+         <br>
+         <button onclick="location.href='./fantasy.html'" class="buttonm"><span>FANTASY FOOTBALL </span></button>
+         <br>
+         <button onclick="location.href='./prediction.html'" class="buttonm"><span>PREDICTION </span></button>
+         <br>
+         <button onclick="location.href='./streak.html'" class="buttonm"><span>STREAK </span></button>
+         <br>
+        </div>
+        <div class="containerINFO">
+            <div>TABBED PANEL</div>
+        </div>
+
+    </body>
+
+</html>
+

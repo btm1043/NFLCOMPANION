@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 31, 2018, 9:08:31 AM
+    Author     : bryant.matt-admin
+*/
+.containermenu {
+    position: -webkit-sticky;
+    background:#1AAB8A;
+    width:25%;
+    float:left;
+}
+.container {
+    position: -webkit-sticky;
+    background:#1AAB8A;
+    width:25%;
+    float:left;
+}
+.containerINFO{
+    position: -webkit-sticky;
+    background:whitesmoke;
+    width:75%;
+    float:right;
+    height:100%;
+}
+.buttonm{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  width:100%;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.buttonlogin{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  height:60px;
+  font-size:1.6em;
+  padding:5px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.buttonm:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.buttonm:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.buttonm:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.buttonm:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+body { 
+    font-size: 80%; 
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; 
+}
+
+.iframe{
+    width:75%;
+    float: right;
+}
+
